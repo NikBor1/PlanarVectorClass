@@ -29,7 +29,7 @@ public:
 
     int getQuadraLen(PlanarVector pv){return pv.x * pv.x + pv.y * pv.y;}
 
-    double getAngle(PlanarVector pv1, PlanarVector pv2){return asin((pv2.y / sqrt(pv2.x * pv2.x + pv2.y * pv2.y))) + asin((pv1.y / sqrt(pv1.x * pv1.x + pv1.y * pv1.y)));}
+    double getAngle(PlanarVector pv1, PlanarVector pv2){return asin((pv2.y / sqrt(pv2.x * pv2.x + pv2.y * pv2.y))) - asin((pv1.y / sqrt(pv1.x * pv1.x + pv1.y * pv1.y)));}
 };
 
 PlanarVector::PlanarVector(int a, int b)
